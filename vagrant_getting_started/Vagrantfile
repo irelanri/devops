@@ -27,7 +27,10 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "web2" do |web2|
   	web2.vm.box = "hashicorp/precise64"
-  	web2.vm.provision :shell, path: "bootstrap.sh"
+  	#web2.vm.provision :shell, path: "bootstrap.sh"
+	web2.vm.provision "chef_solo" do |chef|
+		chef.add_recipe "first_cookbook"
+	end
   	web2.vm.hostname = "richardweb2"
   	web2.vm.network :forwarded_port, guest: 80, host: 4568
   end
