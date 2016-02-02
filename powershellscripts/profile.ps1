@@ -1,0 +1,1 @@
+$env:path += ";C:\Users\922775\powershellscripts"
