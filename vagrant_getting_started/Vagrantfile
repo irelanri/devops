@@ -33,6 +33,10 @@ Vagrant.configure(2) do |config|
   	#web1.vm.berkshelf.berksfile_path = "cookbooks/awesome_customers/Berksfile"
   	web1.vm.box = "hashicorp/precise64"
 	web1.vm.provision "chef_solo" do |chef|
+		# Need some extra detail for debugging !!
+		chef.log_level = :debug
+		# Added after a long search
+		chef.data_bags_path = "data_bags"
 		chef.add_recipe "awesome_customers"
 	end
   	web1.vm.hostname = "richardweb1"

@@ -10,3 +10,4 @@ depends 'apt', '~> 2.6.1'
 depends 'httpd', '~> 0.2.14'
 depends 'mysql2_chef_gem', '~> 1.0.1'
 depends 'mysql', '~> 6.0.17'
+depends 'database' #depends on mysql
