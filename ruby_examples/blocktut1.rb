@@ -47,3 +47,27 @@ puts sites4
 end
         
 
+# (5)
+
+# yield is used to evaluate the block code, within a method that accepts
+# a block...
+
+class Person 
+    def initialize( name ) 
+             @name = name
+    end
+
+     def do_with_name 
+             yield( @name ) 
+     end
+end
+
+person = Person.new("Oscar")
+
+#invoking the method passing a block
+person.do_with_name do |name|
+    puts "Hey, the name is #{name}"
+end
+
+
+
