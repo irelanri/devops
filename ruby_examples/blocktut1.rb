@@ -22,7 +22,7 @@ sites2.each { |site|
 	puts "#{site}.whatever.com"
 }
 
-# Blocks can be enclosed by { .. } OR by begin .. end
+# Blocks can be enclosed by { .. } OR by do .. end
 
 
 # (3)
