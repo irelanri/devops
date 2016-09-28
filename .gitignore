@@ -1,2 +1,11 @@
 # Vagrant section
 */.vagrant
+
+# Don't add (sometimes huge) archives to github (>100Mb)
+**/*.war
+
+
+**/*.lock
+
+# Vagrant librarian repository for dependencies
+**/librarian/modules/*
