@@ -21,14 +21,16 @@ class online_store::ci {
 		'javadoc',
 		'mailer',
 		'greenballs',
+
+		'matrix-project', #added, required by ws-cleanup
+
 		'ws-cleanup',
 
-		'structs',
-		#'matrix-project',
+		'structs', #all added below
 		'junit',
 		'display-url-api',
 		'script-security',
-		'project',
+		#'project',
 		'workflow-scm-step',
 		'workflow-step-api'
 	]
