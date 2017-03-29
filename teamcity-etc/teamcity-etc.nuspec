@@ -37,6 +37,7 @@
             nuget.org gallery uses information you add in the portal. 
     <description>Core utility functions for web applications</description>
     -->
+    <description>Just a nonesense package for testing with.</description>
 
     <!-- Copyright information 
     <copyright>Copyright ©2016 Contoso Corporation</copyright>
