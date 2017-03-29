@@ -56,10 +56,11 @@
     </metadata>
 
 
-    <!-- A readme.txt will be displayed when the package is installed -->
+    <!-- A readme.txt will be displayed when the package is installed 
 
     <files>
     	<file src="file1.txt" target="C:\temp\file1.txt" />
     </files>
+	-->
 
 </package>
