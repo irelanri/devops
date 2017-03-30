@@ -1,1 +1,2 @@
 My message !
+Now the message is longer!
