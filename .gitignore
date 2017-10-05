@@ -3,9 +3,12 @@
 
 # Don't add (sometimes huge) archives to github (>100Mb)
 **/*.war
-
+**/*.jar
+**/*.class
 
 **/*.lock
 
 # Vagrant librarian repository for dependencies
 **/librarian/modules/*
+
+**/*.tmp/*
