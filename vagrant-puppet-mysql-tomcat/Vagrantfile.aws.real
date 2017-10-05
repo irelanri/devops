@@ -21,6 +21,7 @@ Vagrant.configure(2) do |config|
   config.vm.box = "hashicorp/precise32"
 
   config.vm.provider :aws do |aws, override|
+  # Stupid mistake to commit these keys to VCS, have been recycled!
     aws.access_key_id = "AKIAJIYLRYJQDTDDYHLQ"
     aws.secret_access_key =  "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"
     aws.keypair_name = "devops-amazon-eu"
