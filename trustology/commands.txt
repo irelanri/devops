@@ -1,0 +1,22 @@
+# List docker machines (Linux hosts)
+docker-machine ls
+
+# Delete docker machines
+docker-machine rm <name>
+
+#Create a docker machine with  the virtualbox driver
+docker-machine create --driver virtualbox default
+
+# Get IP address of docker machine (default) in order to connect e.g. web sites
+docker-machine ip
+
+# Restart docker machine, if something seems wrong!
+docker-machine restart
+
+# Get list of running containers
+docker ps
+
+# Kill a container
+docker kill <containerID>
+
+
