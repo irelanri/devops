@@ -19,4 +19,8 @@ docker ps
 # Kill a container
 docker kill <containerID>
 
+# Copy files OUT of container
+docker cp `docker ps -l | tail -1 | awk '{print $1;}'`:/path/to/files .
 
+# Connect to container 
+docker exec -it `docker ps -l | tail -1 | awk '{print $1;}'` /bin/bash

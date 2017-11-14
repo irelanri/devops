@@ -1,1 +1,4 @@
+docker create -v jenkins_home:/var/jenkins_home --name helper busybox true
+docker cp jobs/ftt-build helper:/var/jenkins_home/jobs 
+docker rm helper
 docker run -p 8080:8080 -v jenkins_home:/var/jenkins_home2 -d trustology-jenkins
