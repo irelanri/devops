@@ -8,16 +8,14 @@ phases:
         commands:
             - echo Installing source NPM dependencies...
             - cd trustology/hello-world; npm install
-            - npm install -g @angular/cli
+            - cd trustology/hello-world; npm install -g @angular/cli
     build:
         commands:
-            - cd trustology/hello-world
             - echo Build started on `date`
-            - ng build --env=${BUILD_ENV}
+            - cd trustology/hello-world; ng build --env=${BUILD_ENV}
     post_build:
          commands:
-            - cd trustology/hello-world
-            - aws s3 cp dist s3://${S3_BUCKET} --recursive
+            - cd trustology/hello-world; aws s3 cp dist s3://${S3_BUCKET} --recursive
             - echo Build completed on `date`
 artifacts:
     files:

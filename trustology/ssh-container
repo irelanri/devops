@@ -1,0 +1,2 @@
+#
+docker exec -it `docker ps -l | tail -1 | awk '{print $1;}'` /bin/bash
