@@ -6,9 +6,8 @@ environment_variables:
 phases:
     install:
         commands:
-            - cd trustology/hello-world
             - echo Installing source NPM dependencies...
-            - npm install
+            - cd trustology/hello-world; npm install
             - npm install -g @angular/cli
     build:
         commands:
